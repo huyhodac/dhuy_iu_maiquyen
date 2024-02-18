@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center {
+            text-align:center;
+        }
+    </style>
     <title>CSS Envelope + Letter (Open/Close on Click)</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <div class="'envelope-wrapper flap">
-            <div class="'envelope-">
+        <div class="envelope-wrapper">
+            <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong>Dear Mai Quyên của anh.</strong>
+                        <strong>Dear Mai Quyênnn đáng yêuuu của anh,</strong>
                         <p>
-                            Anh biết rằng ở xa nên mình không có nhiều thời gian.
-                            nên anh viết thư này để nói cho e
+                           Lúc mà em về nhà mở bức thư này ra chắc có lẽ rằng em
+                           đã đi ngủ mất rồi. Do mình bị lệch giờ nên a sợ e lo e không ngủ được.
+                           Anh biết em đã rất cố gắng vì tụi mình nên em không cần lo nữa. I'm happy
+                           to see you finally have fun, even if it's hard and difficult.
+                           Để kể một chút về ngày hôm nay của anh thì anh đã họp được với team, 
+                           học được một ít python, và chốt được 1 học viên muốn học thêm!.
+                           <br><br>Không biết tối em có đi đâu chơi không. nếu có thì sáng dậy bé kể
+                           cho a nghe nhé. mặc dù anh không ở đó với em được nhưng em luôn
+                           luôn giữ một vị trí đặc biệt trong tim anh.
+                           <br>Chúc bé ngủ thiệt ngon để sáng a lại gọi bé để catch up nhé.
                         </p>
+                        <p class="center">
+                            <br><br>Your handsome (sometimes silly) boyfriend,
+                           <br>Đắc Hwee.
+                        </p>
+                           
                     </div>
                 </div>
             </div>
+            <div class="heart"></div>
         </div>
     </div>
-    
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
